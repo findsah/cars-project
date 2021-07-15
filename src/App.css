@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 10px;
+  background: #dae2f8;
+  background: -webkit-linear-gradient(to right, #4b79a1, #283e51);
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headerText {
+  font-family: monospace;
+  margin-top: 35px;
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #dae2f8;
+  background: -webkit-linear-gradient(to right, #4b79a1, #283e51);
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  text-align: center;
+}
+
+.footerText {
+  font-family: monospace;
+  font-size: 7px;
+  margin: auto;
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.filterSort {
+  padding-bottom: 10px;
+  margin: 20px;
+}
+
+.filter {
+  width: 150px;
+  height: 21px;
+  padding: 10px;
+  float: right;
+  margin: 5px;
+}
+
+.carsDiv {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.listImage {
+  width: 250px;
+  height: 200px;
+}
+
+.listImageDetails {
+  width: 250px;
+  height: 200px;
+  margin-block-end: 10px;
+  justify-content: center;
+}
+
+.carTitle {
+  color: #6495ed;
+}
+
+.carTitle:hover {
+  cursor: pointer;
+  color: #b0c4de;
+}
+
+.carSubtitle {
+  color: #6495ed;
+}
+
+.carSubtitle:hover {
+  cursor: pointer;
+  color: #b0c4de;
+}
+
+.car {
+  padding: 10px;
+  margin: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+.car:hover {
+  box-shadow: 10px 15px 15px 2px #b0c4de;
+}
+
+.detailsImage {
+  width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+}
+
+.carInfo {
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: -109px;
+}
+
+.carInfoTitleMake {
+  color: black;
+  text-align: center;
+}
+
+.carInfoTitleModel {
+  color: black;
+  text-align: center;
+}
+
+.button {
+  padding: 8px;
+  margin: 5px;
+  float: right;
+  border: none;
+  color: white;
+}
+
+.editAndCloseBtns {
+  margin: 20px;
+}
+
+.closeButton {
+  background: #e32b2b;
+  margin-top: 20px;
+}
+
+.closeButton:hover {
+  background: red;
+}
+
+.editButton {
+  background: #4b5c94;
+  margin-top: 20px;
+}
+
+.editButton:hover {
+  background: #283e51;
+}
+
+.saveButton {
+  background: #4b5c94;
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.saveButton:hover {
+  background: #283e51;
+}
+
+.sortButton {
+  height: 45px;
+  width: 50px;
+  background: #4b5c94;
+  margin-right: 4%;
+}
+
+.sortButton:hover {
+  background: #283e51;
+}
+
+.filterSort {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 0 11% 0 12%;
+  flex-grow: 30% 70%;
+}
+
+.editInput {
+  text-align: center;
+  padding: 8px;
+  margin: 15.7px;
+}
+
+.backButton {
+  background: #4b5c94;
+  margin: 2%;
+}
+
+.backButton:hover {
+  background: #283e51;
+}
+
+.title {
+  text-align: center;
+  margin: 32.5px;
+}
+
+.titleModel {
+  text-align: center;
+  margin: 27px;
+}
+
+.addDiv {
+  margin: 0 12% 0 12%;
+}
+
+.addButton {
+  width: 100px;
+  height: 40px;
+  background-color: #4b5c94;
+}
+
+.addButton:hover {
+  background-color: #283e51;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.saveNewButton {
+  background-color: #4b5c94;
+  margin: 0 auto;
+  display: block;
+  float: none;
+}
+
+.saveNewButton:hover {
+  background-color: #283e51;
+}
+
+.addInput {
+  padding: 1%;
+  width: 225px;
+  display: block;
+  margin: 0 auto 1%;
+  margin-bottom: 3.7px;
+}
+
+.addForm {
+  text-align: center;
+  padding: 1%;
+}
+
+.closeNewButton {
+  background: #e32b2b;
+  margin: 0 auto;
+  display: block;
+  float: none;
+  margin-top: 5px;
+}
+
+.closeNewButton:hover {
+  background: red;
+}
+
+.delete {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.deleteIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.pageItem a {
+  padding: 10px;
+  background-color: #4b79a1;
+  margin: 5px;
+  color: white;
+}
+
+.pageItem a:hover:not(.active) {
+  background-color: #283e51;
+}
+
+.pageItem.active {
+  background-color: #4b5c94;
+}
+
+.pageLink {
+  color: black;
+}
+
+.pageLink:visited {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 520px) {
+  .detailsImage {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .carInfoTitle {
+    text-align: left;
+  }
+  .detailsImage {
+    margin: 0;
+  }
+
+  .headerText {
+    margin: 35px 5% 10px 0;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headerText {
+    margin: 35px 5% 10px 10px;
+    font-size: 0.9em;
+  }
+
+  .addDiv {
+    margin: 0 8% 0 8%;
+  }
+
+  .filterSort {
+    margin: 0 8% 0 8%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .filterSort {
+    margin: 0 11% 0 5%;
+  }
+
+  .addDiv {
+    margin: 0 5% 0px 11%;
+  }
+}
