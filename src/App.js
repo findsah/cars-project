@@ -20,7 +20,7 @@ class App extends Component {
           <Route exact path="/makes/:carMake" component={VehicleMake} />
           <Route exact path="/models/:carModel" component={VehicleModel} />
           <Route exact path="/add" component={AddNewCar} />
-          <Footer text="by Hamza Sharif 2020." />
+          <Footer text="by Syed Ali Hassan." />
         </Router>
       </div>
     );
